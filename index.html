@@ -55,7 +55,7 @@
     <script>
         async function verifyCode() {
             const code = document.getElementById('confirmationCode').value;
-            const response = await fetch(`https://script.google.com/macros/s/AKfycbywlEsRwrdbdBrdKr84G--zr76nGugU89zMNfspxreWvtd9uM1Q8n4csyGj4i5lNEhX/exec${code}`);
+            const response = await fetch(`https://script.google.com/macros/s/AKfycbyknOTG8DhAv_ryXkECG9BDj5Yzp3uXAhoBotX_3DQ/dev${code}`);
             // const response = await fetch(`/lookup?code=${code}`);
             const data = await response.json();
             const resultDiv = document.getElementById('result');
